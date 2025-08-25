@@ -1,0 +1,25 @@
+{
+  "name": "@currentjs/types",
+  "version": "0.1.0",
+  "description": "Shared TypeScript types for fw router and generators.",
+  "license": "MIT",
+  "author": "Konstantin Zavalny",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist",
+    "prepack": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "typescript": "^5.6.3"
+  }
+}
+
